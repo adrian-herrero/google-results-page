@@ -6,6 +6,13 @@
 
 <style>
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #google-logo{
     position: absolute;
     width: 91px;
@@ -88,16 +95,26 @@ hr{
     font-family: arial,sans-serif;
     font-size: 13px;
     margin-left: 13.5em;
+    width:600px;
 }
 
-.individual-link{
+.source-link{
     text-decoration: none; 
     color:#5f6368;
+    font-size: 14px;
+    font-family: arial,sans-serif;
 }
 
-span {
-  width: 40px;
-  height: 40px;
+.link-title{
+    font-size: 20px;
+    font-family: arial,sans-serif;
+    text-align: left;
+}
+
+div .link-results{
+    height: 160px;
+    margin-top: 1em;
+    text-align: left;
 }
 
 .result-description{
@@ -105,6 +122,9 @@ span {
     border:none;
     color: #4d5156;
     font-size: 14px;
+    font-family: arial,sans-serif;
+    text-align: left;
+    line-height: 1.58;;
 
 }
 
@@ -117,9 +137,44 @@ span {
     margin: 15px;
     margin-left: 11em;
     width: 652px;
-    height: 3072px;
+    height: 1000px;
 }
 
+p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.page-footer{
+    position: relative;
+    background-color:#f2f2f2;
+    color: #5f6368;
+    width: 100%;
+    height: 40px;
+    top: 100%;
+    line-height: normal;
+}
+
+.align-left{
+    float:left;
+}
+
+.align-right{
+    float:right;
+}
+
+.footer-links li{
+    display: inline;
+}
+
+.footer-links li a{
+  color: #5f6368;
+  font-size: 14px;
+  margin: 11px 20px 0px;
+  font-family: Arial, sans-serif;
+}
 
 
 </style>
@@ -162,58 +217,124 @@ span {
     <div id="about-results" class="about-results" style="color: #5f6368">About 5,520,000,000 results (0.54 seconds)</div>
 
 <div class="results-block">
-    <div class="link-results"> 
-    <a class="individual-link" href="#">en.wikipedia.org › wiki › Search_engine_results_page</a> 
-    <br>
-    <h3 class="link-title">Search engine results page - Wikipedia</h3>
-    <div>
-        <span class="result-description">Search Engine Results Pages (SERP) are the pages displayed by search engines in response to a query by a user. The main component of the SERP is the listing of results that are returned by the search engine in response to a keyword query.</span>
-    </div>
-    </div>
-<br>
-    <div class="link-results"> 
-        <a class="individual-link" href="#" style="text-decoration: none; color:#5f6368">2en.wikipedia.org › wiki › Search_engine_results_page</a> 
-        <br>
-        <h3 class="link-title"> 2 Search engine results page - Wikipedia</h3>
+
+    <div class="link-results">
+        <a class="source-link" href="#">en.wikipedia.org › wiki › Search_engine_results_page</a>
+        <h3 class="link-title">Search engine results page - Wikipedia</h3>    
         <div>
-            <span class="result-description">2Search Engine Results Pages (SERP) are the pages displayed by search engines in response to a query by a user. The main component of the SERP is the listing of results that are returned by the search engine in response to a keyword query.</span>
+            <p class="result-description">Search Engine Results Pages (SERP) are the pages displayed by search engines in response to a query by a user. The main component of the SERP is the listing of results that are returned by the search engine in response to a keyword query.</p>
         </div>
+    </div>
+
+    <br>
+
+    <div class="link-results">
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">yoast.com › SEO blog › SEO Basics</a> 
+        <h3 class="link-title">Elements of Google Search Engine Results Page • SEO for ...</h3>
+        <div>
+            <p class="result-description">The default page of Google's search result is a page on which different results appear. Google decides which results fit your search query best.</p>
         </div>
-<br>
-        <div class="link-results"> 
-            <a class="individual-link" href="#" style="text-decoration: none; color:#5f6368">3en.wikipedia.org › wiki › Search_engine_results_page</a> 
-            <br>
-            <h3 class="link-title"> 3 Search engine results page - Wikipedia</h3>
-            <div>
-                <span class="result-description">3Search Engine Results Pages (SERP) are the pages displayed by search engines in response to a query by a user. The main component of the SERP is the listing of results that are returned by the search engine in response to a keyword query.</span>
-            </div>
-            </div>
+    </div>
+
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">moz.com › SEO Learning Center</a> 
+        <h3 class="link-title">Google SERP Features [2020 SEO] - Moz</h3>
+        <div>
+            <p class="result-description">A SERP feature is any result on a Google Search Engine Results Page (SERP) that is not a traditional organic result. SERP Features include Rich Snippets ...</p>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">moz.com › Introduction</a> 
+        <h3 class="link-title">How Search Engines Work: Crawling, Indexing, and Ranking ...</h3>
+        <div>
+            <p class="result-description">The number of results Google displays (see “About XX results” above) isn't exact, but it does give you a solid idea of which pages are indexed on your site and ...</p>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">uxmag.com › articles › designing-search-results-pages</a> 
+        <h3 class="link-title">Designing Search: Results Pages | UX Magazine</h3>
+        <div>
+            <p class="result-description">At its most basic, the role of the search engine results page (SERP) is to present items matching a given query. However, behind this simple brief ...</p>
+        </div>
+    </div> 
+    
+    <br>
+
+    <div class="link-results">
+        <a class="source-link" href="#">en.wikipedia.org › wiki › Search_engine_results_page</a>
+        <h3 class="link-title">Search engine results page - Wikipedia</h3>    
+        <div>
+            <p class="result-description">Search Engine Results Pages (SERP) are the pages displayed by search engines in response to a query by a user. The main component of the SERP is the listing of results that are returned by the search engine in response to a keyword query.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="link-results">
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">yoast.com › SEO blog › SEO Basics</a> 
+        <h3 class="link-title">Elements of Google Search Engine Results Page • SEO for ...</h3>
+        <div>
+            <p class="result-description">The default page of Google's search result is a page on which different results appear. Google decides which results fit your search query best.</p>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">moz.com › SEO Learning Center</a> 
+        <h3 class="link-title">Google SERP Features [2020 SEO] - Moz</h3>
+        <div>
+            <p class="result-description">A SERP feature is any result on a Google Search Engine Results Page (SERP) that is not a traditional organic result. SERP Features include Rich Snippets ...</p>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">moz.com › Introduction</a> 
+        <h3 class="link-title">How Search Engines Work: Crawling, Indexing, and Ranking ...</h3>
+        <div>
+            <p class="result-description">The number of results Google displays (see “About XX results” above) isn't exact, but it does give you a solid idea of which pages are indexed on your site and ...</p>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="link-results"> 
+        <a class="source-link" href="#" style="text-decoration: none; color:#5f6368">uxmag.com › articles › designing-search-results-pages</a> 
+        <h3 class="link-title">Designing Search: Results Pages | UX Magazine</h3>
+        <div>
+            <p class="result-description">At its most basic, the role of the search engine results page (SERP) is to present items matching a given query. However, behind this simple brief ...</p>
+        </div>
+    </div> 
 
  </div>
 </body>
 
+<footer class="page-footer">
 
+    <ul class="footer-links align-left">
+    <li> <a class="advertising" style="text-decoration:none" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwioxY7OlLbpAhUGKBoKHbYgB4kQkdQCCB4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_uk%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw0Os6ve9BIfEoZGRVVebyct">Advertising</a></li>
+    <li> <a class="business" style="text-decoration:none" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwioxY7OlLbpAhUGKBoKHbYgB4kQktQCCB8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
+    <li> <a class="how-search-works" style="text-decoration:none" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+</ul>
 
+<ul class="footer-links align-right">
+    <li> <a class="privacy" style="text-decoration:none" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwioxY7OlLbpAhUGKBoKHbYgB4kQ8awCCBo&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a></li>
+    <li> <a class="terms" style="text-decoration:none" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjF-umzj73pAhVEOhoKHQ7zCvYQ8qwCCBY&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a></li>
+    <li> <a class="settings" style="text-decoration:none" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjF-umzj73pAhVEOhoKHQ7zCvYQzq0CCBc&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a></li>
+</ul>
 
+</footer>
 
-<!-- reemplazo navigation-block
-    #navigation-buttons{
-    margin-top: 0.8em;
-    margin-left: 15em;
-    line-height: 4em;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#navigation-buttons-right{
-    margin-top: -2.5em;
-    margin-left: 54em;
-    line-height: 1em;
-    top: 1em;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}-->
 
 
 
